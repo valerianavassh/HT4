@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Ecuación Cuadrática</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h1>Calculadora de Ecuación Cuadrática</h1>
+
+    <div class="caja">
+        <h3>¿Qué es una ecuación cuadrática?</h3>
+        <p>Es una ecuación con la forma: <b>ax² + bx + c = 0</b></p>
+
+        <h3>Fórmula General</h3>
+        <p><b>x = (-b ± √(b² - 4ac)) / 2a</b></p>
+        <p><b>a:</b> Coeficiente cuadrático | <b>b:</b> Coeficiente lineal | <b>c:</b> Término independiente</p>
+
+        <h3>El Discriminante (D)</h3>
+        <p>Se calcula como: <b>D = b² - 4ac</b></p>
+        <ul>
+            <li><b>D > 0:</b> Dos soluciones reales.</li>
+            <li><b>D = 0:</b> Una solución real.</li>
+            <li><b>D < 0:</b> Dos soluciones complejas.</li>
+        </ul>
+
+        <h3>Ejemplo Resuelto</h3>
+        <p><b>x² - 5x + 6 = 0</b> (a=1, b=-5, c=6)</p>
+        <p>Resultado: <b>x₁ = 3, x₂ = 2</b></p>
+    </div>
+
+    <div class="caja">
+        <h3>Resolver Ecuación</h3>
+        
+        <label>Valor de a:</label>
+        <input type="text" id="numA" placeholder="Ej. 1">
+
+        <label>Valor de b:</label>
+        <input type="text" id="numB" placeholder="Ej. -5">
+
+        <label>Valor de c:</label>
+        <input type="text" id="numC" placeholder="Ej. 6">
+
+        <button onclick="calcular()">Calcular Raíces</button>
+
+        <h4 id="resultado"></h4>
+    </div>
+
+</body>
+</html>
